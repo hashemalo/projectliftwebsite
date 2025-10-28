@@ -1,103 +1,112 @@
-import Image from "next/image";
+import Hero from '@/components/Hero';
+import Section from '@/components/Section';
+import Card from '@/components/Card';
+import Button from '@/components/Button';
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      {/* Hero Section */}
+      <Hero
+        title="Empowering Small Businesses Through Technology"
+        description="We are a student organization at UMD helping local small businesses use technology to capitalize on new opportunities and optimize operations to boost their growth and presence."
+        primaryCTA={{
+          text: "For Businesses",
+          href: "/get-involved#businesses"
+        }}
+        secondaryCTA={{
+          text: "For Students",
+          href: "/about"
+        }}
+      />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Mission & Vision */}
+      <Section>
+        <div className="grid md:grid-cols-2 gap-8">
+          <Card hover>
+            <h2 className="text-2xl font-bold mb-4 text-primary">Our Mission</h2>
+            <p className="text-foreground/70 leading-relaxed">
+              We are a student organization at UMD catered towards helping local small businesses use technology to capitalize on new opportunities and optimize operations to boost their growth and presence.
+            </p>
+          </Card>
+          <Card hover>
+            <h2 className="text-2xl font-bold mb-4 text-primary">Our Vision</h2>
+            <p className="text-foreground/70 leading-relaxed">
+              We envision a self-sustaining engine for community growth, powered by interdisciplinary students who deliver lasting, creative solutions to Maryland's small businesses and develop into future leaders.
+            </p>
+          </Card>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </Section>
+
+      {/* Services Overview */}
+      <Section background="muted">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">What We Can Build</h2>
+          <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
+            From websites to AI-driven analytics, we provide comprehensive technology solutions tailored to your business needs.
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <Card hover>
+            <h3 className="text-xl font-semibold mb-2">Website Enhancement</h3>
+            <p className="text-foreground/60 text-sm">
+              Enhance your website with modern technologies for a more immersive user experience.
+            </p>
+          </Card>
+          <Card hover>
+            <h3 className="text-xl font-semibold mb-2">Admin Portals</h3>
+            <p className="text-foreground/60 text-sm">
+              Streamline customer and employee management through seamless portals.
+            </p>
+          </Card>
+          <Card hover>
+            <h3 className="text-xl font-semibold mb-2">Web Scrapers</h3>
+            <p className="text-foreground/60 text-sm">
+              Get up-to-date data on market trends, competition, and opportunities.
+            </p>
+          </Card>
+          <Card hover>
+            <h3 className="text-xl font-semibold mb-2">CRM Systems</h3>
+            <p className="text-foreground/60 text-sm">
+              Boost customer satisfaction and engagement with proper resource management.
+            </p>
+          </Card>
+          <Card hover>
+            <h3 className="text-xl font-semibold mb-2">AI Data Analysis</h3>
+            <p className="text-foreground/60 text-sm">
+              Leverage AI to gain insights on business performance and power decision making.
+            </p>
+          </Card>
+          <Card hover>
+            <h3 className="text-xl font-semibold mb-2">Custom Solutions</h3>
+            <p className="text-foreground/60 text-sm">
+              Tailored technology solutions designed specifically for your business needs.
+            </p>
+          </Card>
+        </div>
+      </Section>
+
+      {/* Stats/Impact */}
+      <Section>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div>
+            <div className="text-4xl font-bold text-primary mb-2">5-6</div>
+            <div className="text-foreground/60">Team Members per Project</div>
+          </div>
+          <div>
+            <div className="text-4xl font-bold text-primary mb-2">100%</div>
+            <div className="text-foreground/60">Direct Client Collaboration</div>
+          </div>
+          <div>
+            <div className="text-4xl font-bold text-primary mb-2">0→1</div>
+            <div className="text-foreground/60">Full System Development</div>
+          </div>
+          <div>
+            <div className="text-4xl font-bold text-primary mb-2">∞</div>
+            <div className="text-foreground/60">Possibilities</div>
+          </div>
+        </div>
+      </Section>
+    </>
   );
 }
