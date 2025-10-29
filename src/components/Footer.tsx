@@ -27,7 +27,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-foreground/60 text-sm leading-relaxed">
-              Empowering Maryland's small businesses through technology and student innovation.
+              Empowering Maryland&apos;s small businesses through technology and student innovation.
             </p>
           </div>
 

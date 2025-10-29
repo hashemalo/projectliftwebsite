@@ -1,7 +1,6 @@
 import Hero from '@/components/Hero';
 import Section from '@/components/Section';
 import Card from '@/components/Card';
-import Button from '@/components/Button';
 
 export default function Home() {
   const galleryImages = [
@@ -73,7 +72,7 @@ export default function Home() {
             </div>
             <h2 className="text-2xl font-bold mb-4 text-primary">Our Vision</h2>
             <p className="text-foreground/70 leading-relaxed">
-              We envision a self-sustaining engine for community growth, powered by interdisciplinary students who deliver lasting, creative solutions to Maryland's small businesses and develop into future leaders.
+              We envision a self-sustaining engine for community growth, powered by interdisciplinary students who deliver lasting, creative solutions to Maryland&apos;s small businesses and develop into future leaders.
             </p>
           </Card>
         </div>

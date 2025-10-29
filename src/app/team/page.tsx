@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Hero from '@/components/Hero';
 import Section from '@/components/Section';
 import Card from '@/components/Card';
-import Button from '@/components/Button';
 
 export const metadata: Metadata = {
   title: 'Our Team | Project LIFT',
@@ -76,7 +75,7 @@ export default function TeamPage() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Our Founders</h2>
           <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
-            The visionaries who started Project LIFT's journey.
+            The visionaries who started Project LIFT&apos;s journey.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -118,7 +117,7 @@ export default function TeamPage() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Our Advisors</h2>
           <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
-            Experienced leaders guiding Project LIFT's mission and growth.
+            Experienced leaders guiding Project LIFT&apos;s mission and growth.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">

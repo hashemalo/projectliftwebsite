@@ -1,12 +1,11 @@
 'use client';
 
-import type { Metadata } from 'next';
 import { useState } from 'react';
+import Image from 'next/image';
 import Hero from '@/components/Hero';
 import Section from '@/components/Section';
 import Card from '@/components/Card';
-import Button from '@/components/Button';
-import { clients, type Client } from '@/data/clients';
+import { clients } from '@/data/clients';
 
 // Note: Since we're using 'use client', we can't export metadata from this component
 // Metadata would need to be set in a parent server component or layout
@@ -93,9 +92,11 @@ export default function ClientsPage() {
                 {/* Logo or Placeholder */}
                 <div className="mb-4">
                   {client.logo ? (
-                    <img
+                    <Image
                       src={client.logo}
                       alt={`${client.name} logo`}
+                      width={150}
+                      height={64}
                       className="h-16 object-contain"
                     />
                   ) : (
@@ -139,7 +140,7 @@ export default function ClientsPage() {
                 {/* Testimonial */}
                 {client.testimonial && (
                   <blockquote className="border-l-4 border-primary pl-4 italic text-foreground/60 text-sm mb-4">
-                    "{client.testimonial}"
+                    &quot;{client.testimonial}&quot;
                   </blockquote>
                 )}
 

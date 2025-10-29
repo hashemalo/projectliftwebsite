@@ -31,7 +31,7 @@ export default function AboutPage() {
           <Card>
             <h2 className="text-3xl font-bold mb-4 text-primary">Our Vision</h2>
             <p className="text-foreground/70 text-lg leading-relaxed">
-              We envision a self-sustaining engine for community growth, powered by interdisciplinary students who deliver lasting, creative solutions to Maryland's small businesses and develop into future leaders.
+              We envision a self-sustaining engine for community growth, powered by interdisciplinary students who deliver lasting, creative solutions to Maryland&apos;s small businesses and develop into future leaders.
             </p>
           </Card>
         </div>
