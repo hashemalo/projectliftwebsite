@@ -40,13 +40,18 @@ export default function AboutPage() {
       {/* Core Values */}
       <Section background="muted">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Core Values</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Our Core Values</h2>
           <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
             The principles that guide everything we do.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           <Card hover>
+            <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+              <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
             <h3 className="text-2xl font-bold mb-4 text-primary">Quality</h3>
             <ul className="space-y-3 text-foreground/70">
               <li className="flex items-start">
@@ -64,6 +69,11 @@ export default function AboutPage() {
             </ul>
           </Card>
           <Card hover>
+            <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+              <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+              </svg>
+            </div>
             <h3 className="text-2xl font-bold mb-4 text-primary">Personalization</h3>
             <ul className="space-y-3 text-foreground/70">
               <li className="flex items-start">
@@ -81,6 +91,11 @@ export default function AboutPage() {
             </ul>
           </Card>
           <Card hover>
+            <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+              <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+              </svg>
+            </div>
             <h3 className="text-2xl font-bold mb-4 text-primary">Community</h3>
             <ul className="space-y-3 text-foreground/70">
               <li className="flex items-start">
@@ -103,7 +118,7 @@ export default function AboutPage() {
       {/* How We Operate */}
       <Section>
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">How We Operate</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">How We Operate</h2>
           <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
             Our systematic approach to delivering exceptional results.
           </p>
@@ -134,31 +149,51 @@ export default function AboutPage() {
       {/* Our Priorities */}
       <Section background="muted">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Priorities</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Our Priorities</h2>
           <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
             What matters most to us and our community.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <Card hover>
+            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" />
+              </svg>
+            </div>
             <h3 className="text-2xl font-bold mb-3 text-primary">Low Barrier To Entry</h3>
             <p className="text-foreground/70">
               Whether it be for small businesses or for student talent, we prioritize equity and accessibility in order to help our community grow.
             </p>
           </Card>
           <Card hover>
+            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+              </svg>
+            </div>
             <h3 className="text-2xl font-bold mb-3 text-primary">Promote Creativity</h3>
             <p className="text-foreground/70">
               The nature of our work allows us to stretch the horizons for both the capabilities of the students and the client – the more creative the solution, the better.
             </p>
           </Card>
           <Card hover>
+            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
             <h3 className="text-2xl font-bold mb-3 text-primary">Connectivity</h3>
             <p className="text-foreground/70">
               We want to bring students with all kinds of passions, interests, and capabilities to collaborate with small businesses with no limitations.
             </p>
           </Card>
           <Card hover>
+            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
             <h3 className="text-2xl font-bold mb-3 text-primary">Support</h3>
             <p className="text-foreground/70">
               Not only do we strive to support clients who directly impact us, but we strive to put their priorities and way of operations at the forefront of our work.

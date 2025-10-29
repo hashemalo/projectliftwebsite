@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+
+// # clouds
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -36,11 +38,6 @@ export default function Footer() {
               <li>
                 <Link href="/about" className="text-foreground/60 hover:text-primary transition-colors text-sm">
                   About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="text-foreground/60 hover:text-primary transition-colors text-sm">
-                  Services
                 </Link>
               </li>
               <li>
@@ -99,7 +96,7 @@ export default function Footer() {
                 aria-label="Instagram"
               >
                 <Image
-                  src="/insta.jpg"
+                  src="/insta.png"
                   alt="Instagram"
                   width={32}
                   height={32}
@@ -114,7 +111,7 @@ export default function Footer() {
                 aria-label="LinkedIn"
               >
                 <Image
-                  src="/linkedin.jpeg"
+                  src="/linkedin.png"
                   alt="LinkedIn"
                   width={32}
                   height={32}

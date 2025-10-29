@@ -8,6 +8,8 @@ interface ButtonProps {
   onClick?: () => void;
   className?: string;
   external?: boolean;
+  target?: string;
+  rel?: string;
 }
 
 export default function Button({
@@ -18,6 +20,8 @@ export default function Button({
   onClick,
   className = '',
   external = false,
+  target,
+  rel,
 }: ButtonProps) {
   const baseStyles = 'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary';
   
@@ -36,12 +40,12 @@ export default function Button({
   const buttonClasses = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
   
   if (href) {
-    if (external) {
+    if (external || target) {
       return (
         <a
           href={href}
-          target="_blank"
-          rel="noopener noreferrer"
+          target={target || "_blank"}
+          rel={rel || "noopener noreferrer"}
           className={buttonClasses}
         >
           {children}
