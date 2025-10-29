@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Project LIFT | Empowering Small Businesses Through Technology",
   description: "A student organization at UMD helping local small businesses use technology to capitalize on new opportunities and optimize operations.",
   keywords: ["UMD", "small business", "technology", "student organization", "Maryland", "innovation"],
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default function RootLayout({
