@@ -25,7 +25,7 @@ export default function Home() {
         }}
         secondaryCTA={{
           text: "For Students",
-          href: "https://docs.google.com/forms/d/e/1FAIpQLSfpAvAfk8yUX4St6giA428JDqGI8e3fz1VKMQxkc3N0H01Wnw/viewform?usp=dialog",
+          href: "https://docs.google.com/forms/d/e/1FAIpQLSf1M351EA2CEEoJj0SDdi9yQ6hk3ZxHQJoMXMsMdnZHqUxDZQ/viewform?usp=sharing&ouid=106786902487104381160",
           target: "_blank",
           rel: "noopener noreferrer"
         }}
